@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Bubnova Irina — бухгалтерское агентство</title>
+<meta name="description" content="Бухгалтерские услуги и консультирование: разбор бизнеса, 3-НДФЛ под ключ, ведение ИП.">
+<meta name="theme-color" content="#1d1c1e">
+<link rel="icon" href="img/mono-dark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">К содержимому</a>
+
+<header class="header" id="header">
+  <div class="wrap header__row">
+    <a class="logo" href="#top" aria-label="Bubnova Irina, на главную">
+      <img src="img/mono.svg" alt="" width="40" height="35">
+      <span class="logo__text"><b>BUBNOVA IRINA</b><small>бухгалтерские услуги и консультирование</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#clients">Кому помогаем</a>
+      <a href="#services">Услуги</a>
+      <a href="#process">3-НДФЛ</a>
+      <a href="#about">О нас</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn--red header__cta" href="#contacts">Оставить заявку</a>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню"><span></span><span></span></button>
+  </div>
+  <div class="header__progress" id="progress"></div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="top">
+  <canvas class="hero__waves" id="waves" aria-hidden="true"></canvas>
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <p class="kicker rise" style="--d:0">Бухгалтерское агентство</p>
+      <h1 class="rise" style="--d:1">Знаем, как законно платить <span class="mark">меньше налогов</span></h1>
+      <p class="lead rise" style="--d:2">Разбираем бизнес от А до Я, ведём ИП и готовим 3-НДФЛ. Помогаем компаниям, предпринимателям, самозанятым и физлицам.</p>
+      <div class="actions rise" style="--d:3">
+        <a class="btn btn--red btn--lg" href="#contacts">Оставить заявку</a>
+        <button class="btn btn--ghost btn--lg" type="button" data-open-contacts>Написать в мессенджер</button>
+      </div>
+    </div>
+    <div class="hero__visual rise" style="--d:2">
+      <div class="portrait" id="portrait">
+        <div class="portrait__frame">
+          <img src="img/irina-portrait.webp" alt="Ирина Бубнова" width="854" height="1168" fetchpriority="high">
+        </div>
+        <div class="chip chip--a"><b>до 48 часов</b><span>готовим 3-НДФЛ</span></div>
+        <div class="chip chip--b"><b>Ирина Бубнова</b><span>бухгалтерские услуги</span></div>
+      </div>
+    </div>
+  </div>
+  <dl class="wrap facts rise" style="--d:4">
+    <div><dt>3 000 ₽</dt><dd>час личной консультации с разбором бизнеса</dd></div>
+    <div><dt>от 2 000 ₽</dt><dd>декларация 3-НДФЛ под ключ</dd></div>
+    <div><dt>Из дома</dt><dd>3-НДФЛ без визитов: документы присылаете на почту</dd></div>
+  </dl>
+  <svg class="hero__curve" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 34C260 92 520 118 760 112C1040 104 1260 62 1440 8V121H0Z"/>
+  </svg>
+</section>
+
+<div class="ticker" id="ticker">
+  <div class="ticker__band">
+    <div class="ticker__track" aria-hidden="true">
+      <ul><li>3-НДФЛ под ключ</li><li>Разбор бизнеса от А до Я</li><li>Ведение ИП</li><li>Налоговые вычеты</li><li>Подбор системы налогообложения</li></ul>
+      <ul><li>3-НДФЛ под ключ</li><li>Разбор бизнеса от А до Я</li><li>Ведение ИП</li><li>Налоговые вычеты</li><li>Подбор системы налогообложения</li></ul>
+    </div>
+  </div>
+  <button class="ticker__pause" id="pause" type="button" aria-pressed="false">Остановить анимацию</button>
+</div>
+
+<section class="section section--light" id="clients">
+  <div class="wrap">
+    <header class="head reveal">
+      <h2><span class="cap">К</span>ому помогаем</h2>
+      <p>Выберите, кто вы, и посмотрите, с чем к нам прийти.</p>
+    </header>
+    <div class="tiles reveal" id="tiles">
+      <article class="tile tile--white is-active">
+        <button type="button" class="tile__head" aria-expanded="true"><span class="tile__abbr">ИП</span><span class="tile__name">Предпринимателям</span></button>
+        <div class="tile__body"><div>
+          <ul><li>Ведение вашего ИП</li><li>Подбор системы налогообложения</li><li>Разбор бизнеса и налоговой нагрузки</li></ul>
+          <a class="more" href="#contacts" data-client="ИП">Обсудить мою ситуацию</a>
+        </div></div>
+      </article>
+      <article class="tile tile--red">
+        <button type="button" class="tile__head" aria-expanded="false"><span class="tile__abbr">ООО</span><span class="tile__name">Компаниям</span></button>
+        <div class="tile__body"><div>
+          <ul><li>Анализ налоговой нагрузки</li><li>Законные способы экономии</li><li>Риски при налоговой проверке</li></ul>
+          <a class="more" href="#contacts" data-client="Компания">Обсудить мою ситуацию</a>
+        </div></div>
+      </article>
+      <article class="tile tile--black">
+        <button type="button" class="tile__head" aria-expanded="false"><span class="tile__abbr">НПД</span><span class="tile__name">Самозанятым</span></button>
+        <div class="tile__body"><div>
+          <ul><li>Консультация по вашей ситуации</li><li>Сравнение режимов налогообложения</li><li>Разбор рисков до того, как они проявятся</li></ul>
+          <a class="more" href="#contacts" data-client="Самозанятый">Обсудить мою ситуацию</a>
+        </div></div>
+      </article>
+      <article class="tile tile--grey">
+        <button type="button" class="tile__head" aria-expanded="false"><span class="tile__abbr">ФЛ</span><span class="tile__name">Физлицам</span></button>
+        <div class="tile__body"><div>
+          <ul><li>3-НДФЛ под ключ</li><li>Поиск вычетов, по которым можно вернуть налог</li><li>Всё дистанционно, не выходя из дома</li></ul>
+          <a class="more" href="#contacts" data-client="Физлицо">Обсудить мою ситуацию</a>
+        </div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark" id="services">
+  <span class="ghost" aria-hidden="true">услуги</span>
+  <div class="wrap">
+    <header class="head reveal">
+      <h2><span class="cap">У</span>слуги и цены</h2>
+      <p>Две услуги с понятной ценой и ведение ИП, которое считаем под ваш объём.</p>
+    </header>
+    <div class="services">
+      <article class="card card--main reveal">
+        <h3>Разбор бизнеса от А до Я</h3>
+        <p class="card__sub">Личная консультация</p>
+        <ul>
+          <li>Анализируем налоговую нагрузку</li>
+          <li>Подбираем систему налогообложения, чтобы её снизить</li>
+          <li>Применяем законную экономию</li>
+          <li>Разбираем все риски при проверке налоговой</li>
+        </ul>
+        <p class="price">3 000 ₽ <small>за час</small></p>
+        <a class="btn btn--white" href="#contacts" data-service="Разбор бизнеса">Записаться на разбор</a>
+      </article>
+      <article class="card reveal">
+        <h3>3-НДФЛ под ключ</h3>
+        <p class="card__sub">Декларация и налоговые вычеты</p>
+        <ul>
+          <li>Присылаем список документов и тариф</li>
+          <li>Ищем, за что ещё можно вернуть налог</li>
+          <li>Готовим декларацию за срок до 48 часов</li>
+          <li>Отправляем в налоговую и копию вам на почту</li>
+        </ul>
+        <p class="price">2 000–5 500 ₽</p>
+        <a class="btn btn--red" href="#contacts" data-service="3-НДФЛ">Заказать декларацию</a>
+      </article>
+      <article class="card reveal">
+        <h3>Ведение ИП</h3>
+        <p class="card__sub">Бухгалтерское сопровождение</p>
+        <p>Берём бухгалтерию вашего ИП на себя. Стоимость зависит от объёма работы, поэтому считаем её после короткого разговора.</p>
+        <p class="price">По расчёту</p>
+        <a class="btn btn--red" href="#contacts" data-service="Ведение ИП">Рассчитать стоимость</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--light" id="process">
+  <div class="wrap process">
+    <div class="process__aside">
+      <h2><span class="cap">Э</span>тапы работы над 3-НДФЛ</h2>
+      <p class="process__big"><span id="stepNum">1</span><small>из 6</small></p>
+      <ul class="terms">
+        <li><b>Срок до 48 часов</b> после полного пакета документов. Если сбоит личный кабинет налогоплательщика, срок увеличится.</li>
+        <li><b>Оплата по готовности</b> декларации.</li>
+        <li><b>Документы — сканами</b> хорошего качества на электронную почту.</li>
+      </ul>
+    </div>
+    <ol class="steps" id="steps">
+      <li><h3>Оставляете заявку</h3><p>По телефону, в мессенджере или через форму на сайте.</p></li>
+      <li><h3>Получаете список документов и тарифы</h3><p>Вместе определяемся с тарифом.</p></li>
+      <li><h3>Обсуждаем детали</h3><p>Уточняем данные для вычета и ищем, за что ещё можно вернуть налог.</p></li>
+      <li><h3>Готовим декларацию</h3><p>Вы присылаете документы, мы берём их в работу.</p></li>
+      <li><h3>Оплачиваете</h3><p>Когда декларация готова.</p></li>
+      <li><h3>Отправляем пакет документов</h3><p>В налоговую, а ваш экземпляр декларации — на электронную почту.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section--dark about" id="about">
+  <span class="ghost" aria-hidden="true">о нас</span>
+  <div class="wrap about__grid">
+    <figure class="about__photo reveal">
+      <img src="img/irina-red.webp" alt="Ирина Бубнова в красном платье" width="640" height="459" loading="lazy">
+    </figure>
+    <div class="about__text reveal">
+      <h2><span class="cap">К</span>то мы</h2>
+      <p class="lead">Бухгалтерское агентство Ирины Бубновой — это большой практический опыт Ирины и команда бухгалтеров на аутсорсе.</p>
+      <ul class="values">
+        <li><b>Только законная экономия</b><span>Снижаем налоговую нагрузку способами, которые выдержат проверку.</span></li>
+        <li><b>Риски называем заранее</b><span>Показываем, на что налоговая обратит внимание.</span></li>
+        <li><b>Любой масштаб</b><span>От одной декларации физлица до разбора всего бизнеса.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--light" id="faq">
+  <div class="wrap faq">
+    <header class="head reveal">
+      <h2><span class="cap">Ч</span>астые вопросы</h2>
+      <p>Не нашли свой вопрос? Задайте его в <a href="#contacts">форме связи</a>.</p>
+    </header>
+    <div class="faq__list reveal">
+      <details name="faq"><summary>Сколько стоит декларация 3-НДФЛ?</summary><p>От 2 000 до 5 500 ₽. Тариф определяем после того, как узнаём вашу ситуацию.</p></details>
+      <details name="faq"><summary>Как быстро будет готова декларация?</summary><p>До 48 часов после того, как вы пришлёте полный пакет документов. При сбоях личного кабинета налогоплательщика срок увеличивается.</p></details>
+      <details name="faq"><summary>Когда нужно платить за 3-НДФЛ?</summary><p>Когда декларация готова.</p></details>
+      <details name="faq"><summary>Нужно ли приезжать лично, чтобы оформить 3-НДФЛ?</summary><p>Нет. Документы присылаете сканами на почту, готовый экземпляр получаете туда же.</p></details>
+      <details name="faq"><summary>Что входит в разбор бизнеса?</summary><p>Анализ налоговой нагрузки, подбор системы налогообложения, законные способы экономии и риски при налоговой проверке. Стоимость — 3 000 ₽ за час.</p></details>
+      <details name="faq"><summary>Сколько стоит ведение ИП?</summary><p>Фиксированной цены нет: она зависит от объёма. Позвоните или оставьте заявку, и мы рассчитаем стоимость.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section contacts" id="contacts">
+  <div class="bigline" aria-hidden="true">
+    <div class="bigline__track"><span>Свяжитесь с нами&nbsp;— Свяжитесь с нами&nbsp;—&nbsp;</span><span>Свяжитесь с нами&nbsp;— Свяжитесь с нами&nbsp;—&nbsp;</span></div>
+  </div>
+  <div class="wrap contacts__grid">
+    <div class="contacts__info reveal">
+      <h2><span class="cap cap--dark">К</span>онтакты</h2>
+      <p>Позвоните, напишите в мессенджер или оставьте заявку — как вам удобнее.</p>
+      <a class="phone" href="#contacts" data-stub>+7 (000) 000-00-00</a>
+      <a class="mail" href="#contacts" data-stub>hello@example.com</a>
+      <div class="messengers">
+        <a href="#contacts" data-stub>WhatsApp</a>
+        <a href="#contacts" data-stub>Telegram</a>
+        <a href="#contacts" data-stub>MAX</a>
+        <a href="#contacts" data-stub>ВКонтакте</a>
+      </div>
+    </div>
+
+    <div class="formbox reveal">
+      <form id="form" novalidate>
+        <h3>Оставить заявку</h3>
+        <fieldset>
+          <legend>Кто вы</legend>
+          <div class="pills">
+            <label><input type="radio" name="client" value="ИП" checked><span>ИП</span></label>
+            <label><input type="radio" name="client" value="Компания"><span>Компания</span></label>
+            <label><input type="radio" name="client" value="Самозанятый"><span>Самозанятый</span></label>
+            <label><input type="radio" name="client" value="Физлицо"><span>Физлицо</span></label>
+          </div>
+        </fieldset>
+        <div class="row">
+          <label class="field"><span>Имя</span><input type="text" name="name" autocomplete="name" required><em></em></label>
+          <label class="field"><span>Телефон</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required><em></em></label>
+        </div>
+        <label class="field"><span>Услуга</span>
+          <select name="service">
+            <option>Разбор бизнеса</option>
+            <option>3-НДФЛ</option>
+            <option>Ведение ИП</option>
+            <option>Другой вопрос</option>
+          </select>
+        </label>
+        <label class="field"><span>Комментарий <i>необязательно</i></span><textarea name="message" rows="3"></textarea></label>
+        <fieldset>
+          <legend>Как с вами связаться</legend>
+          <div class="pills">
+            <label><input type="radio" name="way" value="Звонок" checked><span>Звонок</span></label>
+            <label><input type="radio" name="way" value="WhatsApp"><span>WhatsApp</span></label>
+            <label><input type="radio" name="way" value="Telegram"><span>Telegram</span></label>
+            <label><input type="radio" name="way" value="MAX"><span>MAX</span></label>
+          </div>
+        </fieldset>
+        <label class="check"><input type="checkbox" name="agree" required><span>Согласен(на) на обработку персональных данных</span><em></em></label>
+        <button class="btn btn--red btn--lg btn--wide" type="submit">Отправить заявку</button>
+      </form>
+      <div class="done" id="done" hidden tabindex="-1">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29"/><path d="M19 33l9 9 18-20"/></svg>
+        <h3 id="doneTitle">Форма заполнена верно</h3>
+        <p>Приём заявок через сайт ещё не подключён, поэтому она пока не отправлена.</p>
+        <button class="btn btn--ghost" type="button" id="again">Заполнить ещё раз</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__row">
+    <a class="logo" href="#top" aria-label="Bubnova Irina, наверх">
+      <img src="img/mono.svg" alt="" width="40" height="35">
+      <span class="logo__text"><b>BUBNOVA IRINA</b><small>бухгалтерские услуги и консультирование</small></span>
+    </a>
+    <p>© 2026 Bubnova Irina. Бухгалтерские услуги и консультирование.</p>
+    <a class="up" href="#top">Наверх ↑</a>
+  </div>
+</footer>
+
+<div class="fab" id="fab">
+  <div class="fab__menu" id="fabMenu" hidden>
+    <a href="#contacts" data-stub>Позвонить</a>
+    <a href="#contacts" data-stub>WhatsApp</a>
+    <a href="#contacts" data-stub>Telegram</a>
+    <a href="#contacts" data-stub>MAX</a>
+  </div>
+  <button class="fab__btn" id="fabBtn" type="button" aria-expanded="false" aria-controls="fabMenu" aria-label="Способы связи">
+    <svg class="i-chat" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>
+    <svg class="i-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
